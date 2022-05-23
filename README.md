@@ -1,18 +1,18 @@
-# Burger Queen (API Client)
+# Burger Queen - API Client 🚧(*Em construção*)🚧
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
-* [6. Hacker Edition](#6-hacker-edition)
-* [7. Pistas, tips e leituras complementares](#7-pistas-tips-e-leituras-complementares)
+<!-- * [1. Prefácio](#1-prefácio) -->
+* [Resumo do projeto](#2-resumo-do-projeto)
+<!-- * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [4. Considerações gerais](#4-considerações-gerais) -->
+* [Critérios de aceitação mínimos do projeto](#5-critérios-mínimos-de-aceitação-do-projeto)
+<!-- * [6. Hacker Edition](#6-hacker-edition)
+* [7. Pistas, tips e leituras complementares](#7-pistas-tips-e-leituras-complementares) -->
 
 ***
 
-## 1. Prefácio
+<!-- ## 1. Prefácio
 
 [React](https://reactjs.org/), [Angular](https://angular.io/) e
 [Vue](https://vuejs.org/) são alguns dos _frameworks_ e _bibliotecas_ de
@@ -33,9 +33,9 @@ para reusar (o qual já é um grande valor por si só), mas também adotamos uma
 
 Como desenvolvedora Front-End, estes kits de desenvolvimento podem resultar em
 uma grande ajuda para implementar rapidamente características dos projetos em que
-você for trabalhar.
+você for trabalhar. -->
 
-## 2. Resumo do projeto
+## Resumo do projeto
 
 Um pequeno restaurante de hambúrgueres, que está crescendo, necessita uma
 interface em que se possa realizar pedidos utilizando um _tablet_, e enviá-los
@@ -109,7 +109,7 @@ tela_, e como cada mudança no estado vai refletir na interface (por exemplo,
 toda vez que adicionamos um _produto_ para um _pedido_, a interface deve
 atualizar a lista de pedidos e o total).
 
-## 3. Objetivos de aprendizagem
+<!-- ## 3. Objetivos de aprendizagem
 
 Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
 
@@ -311,9 +311,9 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 - [ ] **Planejar e executar testes de usabilidade**
 
-## 4. Considerações gerais
+## 4. Considerações gerais -->
 
-Este projeto deve ser feito em pares. Lembre-se que deverá consumir a
+<!-- Este projeto deve ser feito em pares. Lembre-se que deverá consumir a
 API [Burger Queen API](https://lab-api-bq.herokuapp.com/api-docs/).
 
 Trabalhe integralmente uma história de usuário antes de passar para a próxima.
@@ -341,9 +341,9 @@ _lines_ e _branches_.
 Por outro lado, vocês devem definir a estrutura das pastas e arquivos que considerem
 necessários. Você pode estruturá-los de acordo com as convenções do _framework_ escolhido.
 Portanto, os _testes_ e os _setups_ necessários para executá-los
-serão feitos por você.
+serão feitos por você. -->
 
-## 5. Critérios mínimos de aceitação do projeto
+## Critérios mínimos de aceitação do projeto
 
 ### Definição do produto
 
@@ -447,7 +447,7 @@ rapidamente aos clientes.
 
 ***
 
-## 6. Hacker Edition
+<!-- ## 6. Hacker Edition
 
 As seções chamadas Hacker Edition são opcionais. Se você terminou tudo e ainda sobrou tempo, faça essa parte. Assim você poderá aprofundar e exercitar mais sobre os objetivos de aprendizagem do projeto.
 
@@ -502,4 +502,4 @@ Web App, Accessibility e Best Practices do [Lighthouse](https://developers.googl
 
 * Veja a documentação [de deploy do Create React App](https://create-react-app.dev/docs/deployment).
 Você pode utilizar qualquer um dos serviços listados na documentação,
-sendo recomendado o Firebase, Vercel, Netlify, Github Pages ou Heroku.
+sendo recomendado o Firebase, Vercel, Netlify, Github Pages ou Heroku. -->
