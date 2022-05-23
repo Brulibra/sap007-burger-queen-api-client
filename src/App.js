@@ -3,6 +3,7 @@ function App() {
     <div className="App">
     <h1>🚧Burguer da Tia Nêna🚧</h1>
     </div>
+    //rotas
   );
 }
 
