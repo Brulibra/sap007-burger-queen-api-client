@@ -1,6 +1,8 @@
+import "./clickButton.css"
+
 function ClickButon (props) {
     return (
-        <button>{props.entering}</button>
+        <button className="general-orange-button">{props.onClick}</button>
     )
 }
 
