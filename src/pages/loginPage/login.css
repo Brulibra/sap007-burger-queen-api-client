@@ -1,8 +1,14 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .logo-image {
     display:flex;
     flex-direction: column;
     align-items: center;
-    height: 20vh;
+    height: 35vh;
     width: auto;
 }
 
@@ -22,7 +28,13 @@
 }
 
 .login-information {
-    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    font-size: 24px;
     padding: 5vh;
     border-radius: 15px;
     background-color: aqua;

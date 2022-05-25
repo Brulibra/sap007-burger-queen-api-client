@@ -3,6 +3,8 @@ function RadioButton(props) {
         <input
             className="radioButton"
             type="radio"
+            name={props.name}
+            value={props.value}
         >
         </input>
     )
