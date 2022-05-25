@@ -5,14 +5,14 @@ import ClickButon from "../../components/clickButton/clickButton"
 import InputTxt from "../../components/InputTxt/InputTxt"
 
 import "./login.css"
-// import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
+import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Login() {
     return (
         <>
-            {/* <div className="logo-image">
+            <div className="logo-image">
                 <img src={logoBurguerTiaNena} alt="logo"></img>
-            </div> */}
+            </div>
             <div className="assign-role">
                 <label> <RadioButton /> Garçom </label>
                 <label><RadioButton /> Cozinha </label>
