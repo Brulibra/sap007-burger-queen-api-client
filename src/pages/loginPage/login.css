@@ -1,3 +1,24 @@
-.form-login{
+.logo-image {
+    height: 20vh;
+    width: auto;
+}
+
+.form-login {
+    display: flex;
+    flex-wrap: wrap;
     padding: 1vh;
+}
+
+.assign-role {
+    padding: 1vh;
+}
+
+.login-information {
+    padding: 5vh;
+    border-radius: 15px;
+    background-color: aqua;
+}
+
+.onClick-button {
+    align-self: center;
 }

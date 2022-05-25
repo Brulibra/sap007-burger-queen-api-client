@@ -11,7 +11,7 @@ function Login() {
     return (
         <>
             <div className="logo-image">
-                <img src={logoBurguerTiaNena} alt="logo"></img>
+                <img className="logo-image" src={logoBurguerTiaNena} alt="logo"></img>
             </div>
             <form className="form-login">
                 <section className="assign-role">
@@ -36,10 +36,10 @@ function Login() {
                         />
                     </label>
                 </section>
-            </form>
             <div className="onClick-button">
                 <ClickButon onClick="Entrar" />
             </div>
+            </form>
         </>
     )
 }
