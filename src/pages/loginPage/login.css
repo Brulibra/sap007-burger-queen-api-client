@@ -1,24 +1,34 @@
 .logo-image {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     height: 20vh;
     width: auto;
 }
 
 .form-login {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
     padding: 1vh;
 }
 
 .assign-role {
-    padding: 1vh;
+    font-size: xx-large;
+    align-self: center;
+    padding: 2vh;
 }
 
 .login-information {
+    font-size: large;
     padding: 5vh;
     border-radius: 15px;
     background-color: aqua;
 }
 
 .onClick-button {
+    margin: 2vh;
     align-self: center;
 }
