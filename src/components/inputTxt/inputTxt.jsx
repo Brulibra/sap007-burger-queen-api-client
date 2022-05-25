@@ -1,18 +1,17 @@
+import "./InputTxt.css"
 
-import "./inputTxt.css"
-
-function inputTxt(props) {
+function InputTxt(props) {
     return (
         <input
-            className="inputTxt"
-            type={props.text}
+            className="InputTxt"
+            type={props.type}
             name={props.name}
             value={props.value}
             placeholder={props.placeholder}
-            required={props.required}
+            required={true}
         >
         </input>
     )
 }
 
-export default inputTxt
+export default InputTxt

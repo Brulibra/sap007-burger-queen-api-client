@@ -1,5 +1,6 @@
-.inputTxt {
-    margin: 2%;
+.InputTxt {
+    margin-top: 2%;
+    margin-bottom: 3%;
     width: 269px;
     height: 28px;
     font-family: 'Orelega One';
@@ -7,4 +8,5 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 26px;
+    font-size: 100%;
 }

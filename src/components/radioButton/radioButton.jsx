@@ -1,7 +1,11 @@
-function radioButton (props) {
+function RadioButton(props) {
     return (
-        <radioButton>{props.role}</radioButton>
+        <input
+            className="radioButton"
+            type="radio"
+        >
+        </input>
     )
 }
 
-export default radioButton
+export default RadioButton
