@@ -1,4 +1,5 @@
 import "./clickButton.css"
+import "../../globalStyle/colors.css"
 
 function ClickButon (props) {
     return (

@@ -5,6 +5,7 @@ import ClickButon from "../../components/clickButton/clickButton"
 import InputTxt from "../../components/InputTxt/InputTxt"
 
 import "./login.css"
+import "../../globalStyle/colors.css"
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Login() {
@@ -39,7 +40,7 @@ function Login() {
                 </section>
             </form>
             <div className="onClick-button">
-                <ClickButon onClick="Entrar" />
+                <ClickButon className="general-orange-button" onClick="Entrar" />
             </div>
         </div>
     )
