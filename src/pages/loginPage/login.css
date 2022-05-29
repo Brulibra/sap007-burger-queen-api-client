@@ -1,4 +1,7 @@
- 
+body{
+    background-color: var(--backgroundSepia);
+}
+
 .login-page{
     display: flex;
     flex-direction: column;
