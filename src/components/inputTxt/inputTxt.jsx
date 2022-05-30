@@ -1,4 +1,4 @@
-import "./InputTxt.css"
+import "./inputTxt.css"
 import "../../globalStyle/colors.css"
 
 function InputTxt(props) {

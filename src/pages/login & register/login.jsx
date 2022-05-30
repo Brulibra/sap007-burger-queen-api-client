@@ -1,36 +1,38 @@
 import React from "react"
 
-import RadioButton from "../../components/RadioButton/RadioButton"
-import ClickButon from "../../components/clickButton/clickButton"
-import InputTxt from "../../components/InputTxt/InputTxt"
+import { Link } from "react-router-dom"
 
-import "./login.css"
+import RadioButton from "../../components/radioButton/radioButton"
+import ClickButon from "../../components/clickButton/clickButton"
+import InputTxt from "../../components/inputTxt/inputTxt"
+
+import "./login&register.css"
 import "../../globalStyle/colors.css"
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Login() {
     return (
-        <div className="login-page">
+        <div className="container">
             <div className="logo-image">
                 <img className="logo-image" src={logoBurguerTiaNena} alt="logo"></img>
             </div>
-            <form className="form-login">
-                <section className="assign-role">
-                    <label> <RadioButton name="role" value="waiter"/> Garçom </label>
-                    <label> <RadioButton name="role" value="cooker"/> Cozinha </label>
-                </section>
-                <section className="login-information">
+            <form className="form">
+                {/* <section className="assign-role">
+                    <label> <RadioButton name="role" value="waiter" /> Garçom </label>
+                    <label> <RadioButton name="role" value="cooker" /> Cozinha </label>
+                </section> */}
+                <section className="information">
                     <label> Email:
-                        <br/><InputTxt
+                        <br /><InputTxt
                             type="email"
                             name="email"
                             placeholder="email@exemplo.com"
                             required={true}
                         />
                     </label>
-                    <br/>
+                    <br />
                     <label> Senha:
-                        <br/><InputTxt
+                        <br /><InputTxt
                             type="password"
                             name="password"
                             placeholder="Até 8 caracteres"
@@ -39,10 +41,13 @@ function Login() {
                         />
                     </label>
                 </section>
+                <div className="onClick-button">
+                    <ClickButon className="general-orange-button" type="submit" onClick="Entrar" txtBtn="Entrar" />
+                </div>
+                <p className="link-to">Não possuí cadastro? 
+                    <Link className="link-to-register" to="/register"> Crie um aqui!</Link>
+                </p>
             </form>
-            <div className="onClick-button">
-                <ClickButon className="general-orange-button" onClick="Entrar" txtBtn="Entrar"/>
-            </div>
         </div>
     )
 }
