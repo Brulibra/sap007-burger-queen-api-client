@@ -16,8 +16,8 @@ function Login() {
             </div>
             <form className="form-login">
                 <section className="assign-role">
-                    <label> <RadioButton /> Garçom </label>
-                    <label><RadioButton /> Cozinha </label>
+                    <label> <RadioButton name="role" value="waiter"/> Garçom </label>
+                    <label> <RadioButton name="role" value="cooker"/> Cozinha </label>
                 </section>
                 <section className="login-information">
                     <label> Email:
@@ -34,13 +34,14 @@ function Login() {
                             type="password"
                             name="password"
                             placeholder="Até 8 caracteres"
+                            maxlength="8"
                             required={true}
                         />
                     </label>
                 </section>
             </form>
             <div className="onClick-button">
-                <ClickButon className="general-orange-button" onClick="Entrar" />
+                <ClickButon className="general-orange-button" onClick="Entrar" txtBtn="Entrar"/>
             </div>
         </div>
     )

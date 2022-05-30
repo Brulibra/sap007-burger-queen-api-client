@@ -1,7 +1,8 @@
 .general-orange-button {
     padding: 1px;
     font-weight: bold;
-    background: #F96446;
+    background: var(--button);
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
+    border: none;
 }

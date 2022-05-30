@@ -7,6 +7,7 @@ function InputTxt(props) {
             className="InputTxt"
             type={props.type}
             name={props.name}
+            maxlength={props.maxlength}
             value={props.value}
             placeholder={props.placeholder}
             required={true}
