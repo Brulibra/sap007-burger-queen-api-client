@@ -1,16 +1,16 @@
-body{
+body {
     background-color: var(--backgroundSepia);
     height: 100vh;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     height: 100%
 }
 
 .logo-image {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 30vh;
@@ -51,14 +51,20 @@ body{
     align-self: center;
 }
 
-.general-orange-button{
+.general-orange-button {
     width: 25vh;
     height: 5vh;
     font-size: 24px;
 }
 
-.link-to{
+.link-to {
     font-size: 20px;
     align-self: center;
     padding: 1vh;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--writingBlack)
 }

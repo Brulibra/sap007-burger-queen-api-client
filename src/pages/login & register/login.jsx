@@ -2,9 +2,10 @@ import React from "react"
 
 import { Link } from "react-router-dom"
 
-import RadioButton from "../../components/radioButton/radioButton"
+// import RadioButton from "../../components/radioButton/radioButton"
 import ClickButon from "../../components/clickButton/clickButton"
 import InputTxt from "../../components/inputTxt/inputTxt"
+import LoggedUser from "../../services/validateLogin.jsx"
 
 import "./login&register.css"
 import "../../globalStyle/colors.css"
@@ -33,19 +34,20 @@ function Login() {
                     <br />
                     <label> Senha:
                         <br /><InputTxt
+                        onChange={LoggedUser}
                             type="password"
                             name="password"
                             placeholder="Até 8 caracteres"
-                            maxlength="8"
+                            maxLength="8"
                             required={true}
                         />
                     </label>
                 </section>
                 <div className="onClick-button">
-                    <ClickButon className="general-orange-button" type="submit" onClick="Entrar" txtBtn="Entrar" />
+                    <ClickButon className="general-orange-button" type="submit" txtBtn="Entrar" />
                 </div>
-                <p className="link-to">Não possuí cadastro? 
-                    <Link className="link-to-register" to="/register"> Crie um aqui!</Link>
+                <p className="link-to">Não possuí cadastro?
+                    <Link to="/register"> Crie um aqui!</Link>
                 </p>
             </form>
         </div>

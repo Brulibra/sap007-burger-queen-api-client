@@ -6,8 +6,9 @@ function InputTxt(props) {
         <input
             className="InputTxt"
             type={props.type}
+            onChange={props.onChange}
             name={props.name}
-            maxlength={props.maxlength}
+            maxLength={props.maxLength}
             value={props.value}
             placeholder={props.placeholder}
             required={true}

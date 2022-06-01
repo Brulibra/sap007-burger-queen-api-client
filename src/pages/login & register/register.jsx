@@ -45,7 +45,7 @@ function Register() {
                             type="password"
                             name="password"
                             placeholder="Até 8 caracteres"
-                            maxlength="8"
+                            maxLength="8"
                             required={true}
                         />
                     </label>
@@ -54,7 +54,7 @@ function Register() {
                             type="password"
                             name="password"
                             placeholder="Confirme a senha"
-                            maxlength="8"
+                            maxLength="8"
                             required={true}
                         />
                     </label>
