@@ -1,12 +1,12 @@
 import "./inputTxt.css"
 import "../../globalStyle/colors.css"
 
-function InputTxt(props) {
+function InputTxt(props, {onChange}) {
     return (
         <input
             className="InputTxt"
             type={props.type}
-            onChange={props.onChange}
+            onChange={onChange}
             name={props.name}
             maxLength={props.maxLength}
             value={props.value}

@@ -1,12 +1,12 @@
 import "./clickButton.css"
 import "../../globalStyle/colors.css"
 
-function ClickButon(props) {
+function ClickButon(props, {onClick}) {
     return (
         <button
             className="general-orange-button"
             type={props.type}
-            onClick={props.onClick}
+            onClick={onClick}
         >
             {props.txtBtn}
         </button>

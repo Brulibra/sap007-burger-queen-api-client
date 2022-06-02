@@ -60,7 +60,7 @@ function Register() {
                     </label>
                 </section>
                 <div className="onClick-button">
-                    <ClickButon className="general-orange-button" onClick="Registrar" txtBtn="Registrar" />
+                    <ClickButon className="general-orange-button" txtBtn="Registrar" />
                 </div>
                 <p className="link-to">Já possuí um cadastro?
                     <Link className="link-to-register" to="/login"> Entre aqui!</Link>

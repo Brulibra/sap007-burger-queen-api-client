@@ -1,4 +1,5 @@
 import React from "react"
+// import { useState } from "react";
 
 import { Link } from "react-router-dom"
 
@@ -27,6 +28,8 @@ function Login() {
                         <br /><InputTxt
                             type="email"
                             name="email"
+                            // value={userCredentials}
+                            onChange={LoggedUser}
                             placeholder="email@exemplo.com"
                             required={true}
                         />
@@ -34,9 +37,10 @@ function Login() {
                     <br />
                     <label> Senha:
                         <br /><InputTxt
-                        onChange={LoggedUser}
                             type="password"
                             name="password"
+                            // value={userCredentials}
+                            onChange={LoggedUser}
                             placeholder="Até 8 caracteres"
                             maxLength="8"
                             required={true}
@@ -53,7 +57,6 @@ function Login() {
         </div>
     )
 }
-
 
 
 export default Login
