@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 // import { useState } from "react";
 
 import { Link } from "react-router-dom"
@@ -13,6 +13,9 @@ import "../../globalStyle/colors.css"
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Login() {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
     return (
         <div className="container">
             <div className="logo-image">
@@ -25,22 +28,21 @@ function Login() {
                 </section> */}
                 <section className="information">
                     <label> Email:
-                        <br /><InputTxt
+                        <InputTxt
                             type="email"
                             name="email"
                             // value={userCredentials}
-                            onChange={LoggedUser}
+                            onChange={(event) => setEmail(event.target.value)}
                             placeholder="email@exemplo.com"
                             required={true}
                         />
                     </label>
-                    <br />
                     <label> Senha:
-                        <br /><InputTxt
+                        <InputTxt
                             type="password"
                             name="password"
                             // value={userCredentials}
-                            onChange={LoggedUser}
+                            onChange={setPassword}
                             placeholder="Até 8 caracteres"
                             maxLength="8"
                             required={true}
@@ -48,7 +50,7 @@ function Login() {
                     </label>
                 </section>
                 <div className="onClick-button">
-                    <ClickButon className="general-orange-button" type="submit" txtBtn="Entrar" />
+                    <ClickButon className="general-orange-button" type="submit" onClick={LoggedUser(email, password)} txtBtn="Entrar" />
                 </div>
                 <p className="link-to">Não possuí cadastro?
                     <Link to="/register"> Crie um aqui!</Link>
@@ -57,6 +59,6 @@ function Login() {
         </div>
     )
 }
-
+console.log(LoggedUser)
 
 export default Login

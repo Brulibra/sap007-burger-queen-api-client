@@ -1,19 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-
-function LoggedUser() {
+function LoggedUser(email, password) {
     const userCredentials = {
-        email: "",
-        password: "",
+        email: email,
+        password: password,
     }
-
-    const [credentials, setCredentials] = useState({userCredentials})
-
-    const handleInputChange = (e) => {
-        setCredentials(e.target.value);
-        console.log(e)
-        console.log(setCredentials)
-    }
+    return userCredentials
 }
 
 export default LoggedUser
