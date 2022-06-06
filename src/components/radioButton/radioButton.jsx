@@ -1,11 +1,11 @@
-function RadioButton(props, {onClick}) {
+function RadioButton({ name, value, onChange}) {
     return (
         <input
             className="radioButton"
             type="radio"
-            name={props.name}
-            onClick={onClick}
-            value={props.value}
+            name={name}
+            onChange={onChange}
+            value={value}
         >
         </input>
     )

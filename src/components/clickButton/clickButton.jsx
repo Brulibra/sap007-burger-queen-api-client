@@ -1,14 +1,14 @@
 import "./clickButton.css"
 import "../../globalStyle/colors.css"
 
-function ClickButon(props) {
+function ClickButon({type, onClick, txtBtn}) {
     return (
         <button
             className="general-orange-button"
-            type={props.type}
-            onClick={props.onClick}
+            type={type}
+            onClick={onClick}
         >
-            {props.txtBtn}
+            {txtBtn}
         </button>
     )
 }

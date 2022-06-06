@@ -1,5 +1,3 @@
-// import { useState } from "react";
-
 function LoggedUser(email, password) {
     const userCredentials = {
         email: email,

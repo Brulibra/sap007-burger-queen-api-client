@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 // import RadioButton from "../../components/radioButton/radioButton"
 import ClickButon from "../../components/clickButton/clickButton"
 import InputTxt from "../../components/inputTxt/inputTxt"
-import LoggedUser from "../../services/validateLogin.jsx"
+import LoggedUser from "../../services/loggedUser.jsx"
 
 import "./login&register.css"
 import "../../globalStyle/colors.css"
@@ -30,8 +30,8 @@ function Login() {
                         <InputTxt
                             type="email"
                             name="email"
-                            onChange={(event) => setEmail(event.target.value)}
                             placeholder="email@exemplo.com"
+                            onChange={(e) => setEmail(e.target.value)}
                             required={true}
                         />
                     </label>
@@ -39,9 +39,9 @@ function Login() {
                         <InputTxt
                             type="password"
                             name="password"
-                            onChange={(event) => setPassword(event.target.value)}
                             placeholder="Até 8 caracteres"
                             maxLength="8"
+                            onChange={(e) => setPassword(e.target.value)}
                             required={true}
                         />
                     </label>
