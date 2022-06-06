@@ -16,6 +16,10 @@ function Register() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [checkpassword, setCheckpassword] = useState("")
+    // const [msgError, setMsgError] = useState("")
+    const {validations} = ValidateRegister;
+
     return (
         <div className="container">
             <div className="logo-image">
@@ -27,11 +31,13 @@ function Register() {
                         name="role"
                         value="waiter"
                         onChange={(e) => setRole(e.target.value)}
+                        required={true}
                     /> Garçom </label>
                     <label> <RadioButton
                         name="role"
                         value="cooker"
                         onChange={(e) => setRole(e.target.value)}
+                        required={true}
                     /> Cozinha </label>
                 </section>
                 <section className="information">
@@ -69,7 +75,7 @@ function Register() {
                             name="password"
                             placeholder="Confirme a senha"
                             maxLength="8"
-                            onChange={(e) => setPassword(e.target.value)}
+                            onChange={(e) => setCheckpassword(e.target.value)}
                             required={true}
                         />
                     </label>
@@ -77,14 +83,18 @@ function Register() {
                 <div className="onClick-button">
                     <ClickButon
                         className="general-orange-button"
-                        type="submit" 
-                        onClick={() => { ValidateRegister(role, name, email, password) }}
+                        type="submit"
+                        onClick={() => { ValidateRegister(role, name, email, password, checkpassword)}}
+                        onSubmit={() =>{validations()}}
                         txtBtn="Entrar"
                     />
                 </div>
                 <p className="link-to">Já possuí um cadastro?
                     <Link className="link-to-register" to="/login"> Entre aqui!</Link>
                 </p>
+                {/* <div>
+                    <p className="error-mensage">{setMsgError}</p>
+                </div> */}
             </form>
         </div>
     )

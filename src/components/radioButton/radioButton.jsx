@@ -6,6 +6,7 @@ function RadioButton({ name, value, onChange}) {
             name={name}
             onChange={onChange}
             value={value}
+            required={true}
         >
         </input>
     )
