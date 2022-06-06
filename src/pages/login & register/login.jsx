@@ -15,7 +15,6 @@ import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-
     return (
         <div className="container">
             <div className="logo-image">
@@ -31,7 +30,6 @@ function Login() {
                         <InputTxt
                             type="email"
                             name="email"
-                            // value={userCredentials}
                             onChange={(event) => setEmail(event.target.value)}
                             placeholder="email@exemplo.com"
                             required={true}
@@ -41,8 +39,7 @@ function Login() {
                         <InputTxt
                             type="password"
                             name="password"
-                            // value={userCredentials}
-                            onChange={setPassword}
+                            onChange={(event) => setPassword(event.target.value)}
                             placeholder="Até 8 caracteres"
                             maxLength="8"
                             required={true}
@@ -50,7 +47,11 @@ function Login() {
                     </label>
                 </section>
                 <div className="onClick-button">
-                    <ClickButon className="general-orange-button" type="submit" onClick={LoggedUser(email, password)} txtBtn="Entrar" />
+                    <ClickButon
+                        className="general-orange-button"
+                        type="submit" onClick={() => {LoggedUser(email, password)}}
+                        txtBtn="Entrar"
+                    />
                 </div>
                 <p className="link-to">Não possuí cadastro?
                     <Link to="/register"> Crie um aqui!</Link>
@@ -59,6 +60,4 @@ function Login() {
         </div>
     )
 }
-console.log(LoggedUser)
-
 export default Login

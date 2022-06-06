@@ -5,7 +5,7 @@ function LoggedUser(email, password) {
         email: email,
         password: password,
     }
-    return userCredentials
+    return console.log(userCredentials)
 }
 
 export default LoggedUser

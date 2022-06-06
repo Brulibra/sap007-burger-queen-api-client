@@ -1,16 +1,16 @@
 import "./inputTxt.css"
 import "../../globalStyle/colors.css"
 
-function InputTxt(props, {onChange}) {
+function InputTxt({type, name, maxLength, value, placeholder, onChange}) {
     return (
         <input
             className="InputTxt"
-            type={props.type}
+            type={type}
             onChange={onChange}
-            name={props.name}
-            maxLength={props.maxLength}
-            value={props.value}
-            placeholder={props.placeholder}
+            name={name}
+            maxLength={maxLength}
+            value={value}
+            placeholder={placeholder}
             required={true}
         >
         </input>
