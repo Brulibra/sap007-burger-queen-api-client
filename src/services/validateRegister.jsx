@@ -1,3 +1,4 @@
+import {userCreate} from "./apiUser.jsx"
 
 function ValidateRegister(role, name, email, password, checkpassword) {
 
@@ -10,23 +11,27 @@ function ValidateRegister(role, name, email, password, checkpassword) {
     }
     console.log(registerCredentials)
 
-    
-
-    const validations = (e) => {
-        e.preventDefault()
-        if(registerCredentials.password !== registerCredentials.checkpassword){
-            console.log("as senhas não batem")
-        }
+    if (!/\S+@\S+\.\S+/.test(registerCredentials.email)) {
+        console.log("não é email")
+    } else if (registerCredentials.password !== registerCredentials.checkpassword) {
+        console.log("as senhas não batem")
+    }else{
+        userCreate(registerCredentials).then((res) => {
+            switch(res.status){
+                case 200: console.log("conseguiu")
+                // return res.json();
+                break;
+                case 403: console.log("Email já cadastrado")
+                // return res.json();
+                break
+                default: console.log("não deu :c")
+                break;
+            }
+        })
+            .then((data) => {
+                console.log(data)
+                localStorage.setItem("token", data.token)
+            })
     }
-    return validations;
 }
 export default ValidateRegister
-
-// !/\S+@\S+\.\S+/ regex email
-// const inputs = {
-//     role: registerCredentials.role === "" ? console.log("preencha o role") : console.log("preenchido"),
-//     name: registerCredentials.name === "" ? console.log("preencha o nome") : console.log("preenchido"),
-//     correctEmail: /\S+@\S+\.\S+/.test(registerCredentials.email) ? console.log("email.correto") : console.log("email.errado"),
-//     password: registerCredentials.password === "" ? console.log("preencha a senha") : console.log("preenchido"),
-//     checkpassword: registerCredentials.password !== registerCredentials.checkpassword ? console.log("As senhas precisam bater") : console.log("As senhas coincidem"),
-// }
