@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { userCreate } from "./apiUser.jsx"
+import { useNavigate } from "react-router-dom";
+import { userCreate } from "./API/apiUser.jsx"
 function ValidateRegister() {
 
     const registerCredentials = {
@@ -14,6 +15,8 @@ function ValidateRegister() {
 
     const [msgError, setMsgError] = useState("")
 
+    const navigate = useNavigate();
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setCredentials({ ...credentials, [name]: value })
@@ -22,23 +25,26 @@ function ValidateRegister() {
     const submit = (e) => {
         e.preventDefault()
         setMsgError("")
-        if (!/\S+@\S+\.\S+/.test(credentials.email)) {
-            console.log("não é email")
-        // } else if (credentials.password !== credentials.checkpassword) {
-        //     console.log("as senhas não batem")
+
+        console.log(credentials.password, credentials.checkpassword)
+        if (credentials.password !== credentials.checkpassword) {
+            setMsgError("as senhas não batem")
+        } else if (!/\S+@\S+\.\S+/.test(credentials.email)) {
+            setMsgError("não é email")
         } else {
             userCreate(credentials).then((res) => {
                 switch (res.status) {
                     case 200: console.log("conseguiu")
-                        break
+                    return res.json()
                     case 403: setMsgError("Email já foi cadastrado")
                         break
-                    default: console.log("Não deu :c")
+                    default: setMsgError("Não deu :c")
                 }
             })
                 .then((data) => {
                     console.log(data)
                     localStorage.setItem("token", data.token)
+                    navigate("/hall")
                 })
         }
     }

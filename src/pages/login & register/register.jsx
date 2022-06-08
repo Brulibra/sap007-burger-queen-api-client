@@ -66,7 +66,7 @@ function Register() {
                     <label> Confirme a Senha:
                         <InputTxt
                             type="password"
-                            name="password"
+                            name="checkpassword"
                             placeholder="Confirme a senha"
                             maxLength="8"
                             onChange={handleInputChange}
