@@ -26,7 +26,6 @@ function ValidateRegister() {
         e.preventDefault()
         setMsgError("")
 
-        console.log(credentials.password, credentials.checkpassword)
         if (credentials.password !== credentials.checkpassword) {
             setMsgError("as senhas não batem")
         } else if (!/\S+@\S+\.\S+/.test(credentials.email)) {
@@ -38,7 +37,6 @@ function ValidateRegister() {
                     return res.json()
                     case 403: setMsgError("Email já foi cadastrado")
                         break
-                    default: setMsgError("Não deu :c")
                 }
             })
                 .then((data) => {
@@ -52,4 +50,3 @@ function ValidateRegister() {
 }
 export default ValidateRegister
 
-// ana@email.com -> email já cadastrado para teste

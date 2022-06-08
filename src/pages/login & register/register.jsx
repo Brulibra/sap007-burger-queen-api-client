@@ -1,5 +1,4 @@
 import React from "react"
-
 import { Link } from "react-router-dom"
 
 import RadioButton from "../../components/radioButton/radioButton.jsx"
@@ -81,12 +80,14 @@ function Register() {
                         txtBtn="Registrar"
                     />
                 </div>
+                {msgError && (
+                    <div className="error-container">
+                        <p className="error-mensage">{msgError}</p>
+                    </div>
+                )}
                 <p className="link-to">Já possuí um cadastro?
                     <Link className="link-to-register" to="/login">Entre aqui!</Link>
                 </p>
-                <div>
-                    <p className="error-mensage">{msgError}</p>
-                </div>
             </form>
         </div>
     )
