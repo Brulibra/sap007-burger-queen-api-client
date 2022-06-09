@@ -1,10 +1,16 @@
-import { format, formatDistance, formatRelative, subDays } from 'date-fns'
+import { useEffect, useState } from "react";
 
-format(new Date(), "'Today is a' eeee")
-//=> "Today is a Wednesday"
+function Clock() {
+    const [seconds, setSeconds] = useState()
 
-formatDistance(subDays(new Date(), 3), new Date(), { addSuffix: true })
-//=> "3 days ago"
+    useEffect(() => {
+        setInterval(() => {
+            const newTime = new Date()
+            setSeconds(newTime.toLocaleString())
+        }, 1000)
+    }, []);
 
-formatRelative(subDays(new Date(), 3), new Date())
-//=> "last Friday at 7:26 p.m."
+    return {seconds}
+}
+
+export default Clock

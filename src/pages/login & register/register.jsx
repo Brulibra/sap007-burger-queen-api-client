@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import RadioButton from "../../components/radioButton/radioButton.jsx"
-import ClickButon from "../../components/clickButton/clickButton.jsx"
-import InputTxt from "../../components/inputTxt/inputTxt.jsx"
+import RadioButton from "../../components/buttons&inputs/radioButton/radioButton"
+import ClickButon from "../../components/buttons&inputs/clickButton/clickButton"
+import InputTxt from "../../components/buttons&inputs/inputTxt/inputTxt"
 import ValidateRegister from "../../services/validateRegister.jsx"
 
 import "./login&register.css"

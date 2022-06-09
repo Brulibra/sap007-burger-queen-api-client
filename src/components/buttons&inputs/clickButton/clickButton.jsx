@@ -1,5 +1,5 @@
 import "./clickButton.css"
-import "../../globalStyle/colors.css"
+import "../../../globalStyle/colors.css"
 
 function ClickButon({type, onClick, txtBtn}) {
     return (
