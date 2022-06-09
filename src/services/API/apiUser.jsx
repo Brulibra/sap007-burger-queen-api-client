@@ -15,3 +15,16 @@ export const userCreate = (user) => {
         })
     })
 }
+
+export const loginUser = (user) => {
+    return fetch(`${apiLink}/auth/`, {
+        method: "POST",
+        headers:{
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            email: user.email,
+            password: user.password
+        })
+    })
+}

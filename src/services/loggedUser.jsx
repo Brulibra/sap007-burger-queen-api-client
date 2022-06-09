@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { userCreate } from "./API/apiUser.jsx"
+import { loginUser } from "./API/apiUser.jsx"
 
 function LoggedUser() {
 
@@ -21,9 +21,8 @@ function LoggedUser() {
     }
     const loginSubmit = (e) => {
         e.preventDefault()
-        setMsgError("")
 
-        userCreate(credentials).then((res) => {
+        loginUser(credentials).then((res) => {
             switch (res.status) {
                 case 200: console.log("logou")
                     return res.json()
@@ -32,8 +31,8 @@ function LoggedUser() {
             }
         })
             .then((data) => {
-                console.data(data)
                 localStorage.setItem("token", data.token)
+                localStorage.setItem("role", data.role)
                 navigate("/hall")
             })
     }

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 import ClickButon from "../../components/buttons&inputs/clickButton/clickButton"
 import InputTxt from "../../components/buttons&inputs/inputTxt/inputTxt"
 import LoggedUser from "../../services/loggedUser"
-import Header from "../../components/Time/clock"
 
 import "./login&register.css"
 import "../../globalStyle/colors.css"
@@ -13,13 +12,9 @@ import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Login() {
     const {handleInputChange, loginSubmit, msgError} = LoggedUser();
-    const {seconds} = Header()
 
     return (
         <div className="container">
-            <div>
-            {seconds}
-                </div>
             <div className="logo-image">
                 <img className="logo-image" src={logoBurguerTiaNena} alt="logo"></img>
             </div>
