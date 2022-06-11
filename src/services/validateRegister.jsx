@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { userCreate } from "./API/apiUser.jsx"
+import { userCreate } from "./api.jsx"
 function ValidateRegister() {
 
     const registerCredentials = {
@@ -37,12 +37,13 @@ function ValidateRegister() {
                     return res.json()
                     case 403: setMsgError("Email já foi cadastrado")
                         break
+                        default: setMsgError("Algo deu errago, tente novamente mais tarde...")
                 }
             })
                 .then((data) => {
                     console.log(data)
                     localStorage.setItem("token", data.token)
-                    navigate("/hall")
+                    navigate("/main")
                 })
         }
     }

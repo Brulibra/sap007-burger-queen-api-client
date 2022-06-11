@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { loginUser } from "./API/apiUser.jsx"
+import { loginUser } from "./api.jsx"
 
 function LoggedUser() {
 
@@ -28,15 +28,15 @@ function LoggedUser() {
                     return res.json()
                 case 400: setMsgError("Email e/ou Senha inválidos")
                     break
+                    default: setMsgError("Algo deu errado, tente novamente mais tarde...")
             }
         })
             .then((data) => {
                 localStorage.setItem("token", data.token)
                 localStorage.setItem("role", data.role)
-                navigate("/hall")
+                navigate("/main")
             })
     }
     return { handleInputChange, loginSubmit, msgError }
 }
-
 export default LoggedUser

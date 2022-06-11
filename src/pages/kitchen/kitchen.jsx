@@ -1,12 +1,14 @@
 import React from "react";
+import "./kitchen.css"
 
-function Kitchen (){
-    return(
-        <h1>Bem-vindo à cozinha do Burguer da Tia Nêda
+function Kitchen() {
+    return (
+        <div className="container">
+            <h1>Bem-vindo à cozinha do Burguer da Tia Nêda</h1>
             <h2>No momento estamos fechados
-                <h3>Confira o horário de funcionamento</h3>
+                <br />Confira o horário de funcionamento
             </h2>
-        </h1>
+        </div>
     )
 }
 export default Kitchen

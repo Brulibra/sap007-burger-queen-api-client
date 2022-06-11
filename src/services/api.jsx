@@ -1,5 +1,8 @@
 const apiLink = "https://lab-api-bq.herokuapp.com"
 
+export const token = () => localStorage.getItem("token")
+export const role = () => localStorage.getItem("role")
+
 export const userCreate = (user) => {
     return fetch(`${apiLink}/users/`, {
         method: "POST",
@@ -26,5 +29,15 @@ export const loginUser = (user) => {
             email: user.email,
             password: user.password
         })
+    })
+}
+
+export const getProducts = () => {
+    return fetch(`${apiLink}/products/`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": token(),
+        }
     })
 }
