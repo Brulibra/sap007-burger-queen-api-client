@@ -5,13 +5,14 @@ import { Link } from "react-router-dom"
 import ClickButon from "../../components/buttons&inputs/clickButton/clickButton"
 import InputTxt from "../../components/buttons&inputs/inputTxt/inputTxt"
 import LoggedUser from "../../services/loggedUser"
+import Footer from "../../components/footer/footer"
 
 import "./login&register.css"
 import "../../globalStyle/colors.css"
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Login() {
-    const {handleInputChange, loginSubmit, msgError} = LoggedUser();
+    const { handleInputChange, loginSubmit, msgError } = LoggedUser();
 
     return (
         <div className="container">
@@ -60,6 +61,9 @@ function Login() {
                     </div>
                 )}
             </form>
+            <div className="footer">
+                <Footer />
+            </div>
         </div>
     )
 }

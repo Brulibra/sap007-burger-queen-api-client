@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 27vh;
+    height: 25vh;
     width: auto;
 }
 
@@ -64,6 +64,7 @@ body {
 a {
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
     color: var(--writingBlack)
 }
 
@@ -75,4 +76,8 @@ a {
     font-size: 24px;
     font-weight: bold;
     border: 10px double black;
+}
+
+.footer{
+    align-self: center;
 }

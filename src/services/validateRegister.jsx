@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { userCreate } from "./api.jsx"
+import { userCreate } from "./API/api.jsx"
+
 function ValidateRegister() {
 
     const registerCredentials = {
@@ -43,6 +44,7 @@ function ValidateRegister() {
                 .then((data) => {
                     console.log(data)
                     localStorage.setItem("token", data.token)
+                    localStorage.setItem("role", data.role)
                     navigate("/main")
                 })
         }

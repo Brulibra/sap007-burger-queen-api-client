@@ -1,7 +1,4 @@
-const apiLink = "https://lab-api-bq.herokuapp.com"
-
-export const token = () => localStorage.getItem("token")
-export const role = () => localStorage.getItem("role")
+import { apiLink, getToken } from "./localStorage"
 
 export const userCreate = (user) => {
     return fetch(`${apiLink}/users/`, {
@@ -37,7 +34,7 @@ export const getProducts = () => {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": token(),
+            "Authorization": getToken(),
         }
     })
 }

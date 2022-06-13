@@ -5,13 +5,14 @@ import RadioButton from "../../components/buttons&inputs/radioButton/radioButton
 import ClickButon from "../../components/buttons&inputs/clickButton/clickButton"
 import InputTxt from "../../components/buttons&inputs/inputTxt/inputTxt"
 import ValidateRegister from "../../services/validateRegister.jsx"
+import Footer from "../../components/footer/footer"
 
 import "./login&register.css"
 import "../../globalStyle/colors.css"
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Register() {
-    const {handleInputChange, submit, msgError} = ValidateRegister();
+    const { handleInputChange, submit, msgError } = ValidateRegister();
 
     return (
         <div className="container">
@@ -89,6 +90,9 @@ function Register() {
                     <Link className="link-to-register" to="/login">Entre aqui!</Link>
                 </p>
             </form>
+            <div className="footer">
+                <Footer />
+            </div>
         </div>
     )
 }
