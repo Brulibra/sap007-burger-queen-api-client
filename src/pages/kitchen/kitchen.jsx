@@ -1,12 +1,23 @@
 import React from "react";
+import "./kitchen.css"
 
-function Kitchen (){
-    return(
-        <h1>Bem-vindo à cozinha do Burguer da Tia Nêda
-            <h2>No momento estamos fechados
-                <h3>Confira o horário de funcionamento</h3>
+import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
+import Footer from "../../components/footer/footer.jsx"
+
+function Kitchen() {
+    return (
+        <div className="container">
+            <div className="logo-image">
+            <img className="logo-image" src={logoBurguerTiaNena} alt="logo"></img>
+            </div>
+            <h1 className="welcome-kitchen">Bem-vindo à Cozinha do Burguer da Tia Nêda</h1>
+            <h2 className="text-kitchen">No momento estamos fechados
+                <br />Confira o horário de funcionamento
             </h2>
-        </h1>
+            <div className="footer">
+            <Footer />
+            </div>
+        </div>
     )
 }
 export default Kitchen

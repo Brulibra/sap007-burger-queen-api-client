@@ -1,5 +1,5 @@
 import "./inputTxt.css"
-import "../../globalStyle/colors.css"
+import "../../../globalStyle/colors.css"
 
 function InputTxt({type, name, maxLength, value, placeholder, onChange}) {
     return (

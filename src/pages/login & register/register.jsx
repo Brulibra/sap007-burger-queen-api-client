@@ -1,18 +1,18 @@
 import React from "react"
-
 import { Link } from "react-router-dom"
 
-import RadioButton from "../../components/radioButton/radioButton.jsx"
-import ClickButon from "../../components/clickButton/clickButton.jsx"
-import InputTxt from "../../components/inputTxt/inputTxt.jsx"
+import RadioButton from "../../components/buttons&inputs/radioButton/radioButton"
+import ClickButon from "../../components/buttons&inputs/clickButton/clickButton"
+import InputTxt from "../../components/buttons&inputs/inputTxt/inputTxt"
 import ValidateRegister from "../../services/validateRegister.jsx"
+import Footer from "../../components/footer/footer"
 
 import "./login&register.css"
 import "../../globalStyle/colors.css"
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 
 function Register() {
-    const {handleInputChange, submit, msgError} = ValidateRegister();
+    const { handleInputChange, submit, msgError } = ValidateRegister();
 
     return (
         <div className="container">
@@ -81,13 +81,18 @@ function Register() {
                         txtBtn="Registrar"
                     />
                 </div>
+                {msgError && (
+                    <div className="error-container">
+                        <p className="error-mensage">{msgError}</p>
+                    </div>
+                )}
                 <p className="link-to">Já possuí um cadastro?
                     <Link className="link-to-register" to="/login">Entre aqui!</Link>
                 </p>
-                <div>
-                    <p className="error-mensage">{msgError}</p>
-                </div>
             </form>
+            <div className="footer">
+                <Footer />
+            </div>
         </div>
     )
 }

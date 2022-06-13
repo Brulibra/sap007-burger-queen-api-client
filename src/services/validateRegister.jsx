@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { userCreate } from "./API/apiUser.jsx"
+import { userCreate } from "./API/api.jsx"
+
 function ValidateRegister() {
 
     const registerCredentials = {
@@ -26,7 +27,6 @@ function ValidateRegister() {
         e.preventDefault()
         setMsgError("")
 
-        console.log(credentials.password, credentials.checkpassword)
         if (credentials.password !== credentials.checkpassword) {
             setMsgError("as senhas não batem")
         } else if (!/\S+@\S+\.\S+/.test(credentials.email)) {
@@ -38,13 +38,14 @@ function ValidateRegister() {
                     return res.json()
                     case 403: setMsgError("Email já foi cadastrado")
                         break
-                    default: setMsgError("Não deu :c")
+                        default: setMsgError("Algo deu errago, tente novamente mais tarde...")
                 }
             })
                 .then((data) => {
                     console.log(data)
                     localStorage.setItem("token", data.token)
-                    navigate("/hall")
+                    localStorage.setItem("role", data.role)
+                    navigate("/main")
                 })
         }
     }
@@ -52,4 +53,3 @@ function ValidateRegister() {
 }
 export default ValidateRegister
 
-// ana@email.com -> email já cadastrado para teste

@@ -1,12 +1,22 @@
 import React from "react";
+import "./hall.css"
+import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
+import Footer from "../../components/footer/footer.jsx"
 
-function Hall (){
-    return(
-        <h1>Bem-vindo ao Burguer da Tia Nêda
-            <h2>No momento estamos fechados
-                <h3>Confira o horário de funcionamento</h3>
+function Hall() {
+    return (
+        <div className="container">
+            <div className="logo-image">
+                <img className="logo-image" src={logoBurguerTiaNena} alt="logo"></img>
+            </div>
+            <h1 className="welcome">Bem-vindo ao Burguer da Tia Nêda</h1>
+            <h2 className="text">No momento estamos fechados
+                <br />Confira o horário de funcionamento
             </h2>
-        </h1>
+            <div className="footer">
+                <Footer />
+            </div>
+        </div>
     )
 }
 export default Hall
