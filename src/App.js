@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 
 import Hall from "./pages/hall/hall";
 import Kitchen from "./pages/kitchen/kitchen";
@@ -10,7 +10,7 @@ import PrivateRoute from "./components/priveteRoute/priveteRoute.jsx"
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path="/login" element={<Login />}></Route>
         <Route exact path="/register" element={<Register />}></Route>
@@ -28,7 +28,7 @@ function App() {
         />
         <Route exact path="/" element={<Navigate replace to="/login" />}></Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

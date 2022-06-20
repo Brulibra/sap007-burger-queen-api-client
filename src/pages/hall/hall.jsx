@@ -1,5 +1,6 @@
 import React from "react";
 import "./hall.css"
+
 import logoBurguerTiaNena from "../../images/logoBurguerTiaNena.png"
 import Footer from "../../components/footer/footer.jsx"
 import ClickButon from "../../components/buttons&inputs/clickButton/clickButton";
