@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "./API/api.jsx"
+import { logOut } from "./API/localStorage.jsx";
 // import { tokenAndRole } from "../services/API/localStorage.jsx"
 
 function LoggedUser() {
@@ -15,6 +16,10 @@ function LoggedUser() {
     const [msgError, setMsgError] = useState("")
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        logOut()
+    },[])
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -37,8 +42,11 @@ function LoggedUser() {
                 console.log(data.role)
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("role", data.role);
-                navigate("/main")
-
+                if(data.role === "waiter"){
+                    navigate("/hall")
+                }else{
+                    navigate("/kitchen")
+                }
             })
     }
     return { handleInputChange, loginSubmit, msgError }
