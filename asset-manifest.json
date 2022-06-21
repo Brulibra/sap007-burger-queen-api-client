@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sap007-burger-queen-api-client/static/css/main.cba5dbe7.css",
+    "main.css": "/sap007-burger-queen-api-client/static/css/main.43ba3e56.css",
     "main.js": "/sap007-burger-queen-api-client/static/js/main.3dd2d409.js",
     "static/media/logoBurguerTiaNena.png": "/sap007-burger-queen-api-client/static/media/logoBurguerTiaNena.b736758bf8a5e7be55aa.png",
     "static/media/linkedin.png": "/sap007-burger-queen-api-client/static/media/linkedin.43230dfc491e5ac672f7.png",
     "index.html": "/sap007-burger-queen-api-client/index.html",
-    "main.cba5dbe7.css.map": "/sap007-burger-queen-api-client/static/css/main.cba5dbe7.css.map",
+    "main.43ba3e56.css.map": "/sap007-burger-queen-api-client/static/css/main.43ba3e56.css.map",
     "main.3dd2d409.js.map": "/sap007-burger-queen-api-client/static/js/main.3dd2d409.js.map"
   },
   "entrypoints": [
-    "static/css/main.cba5dbe7.css",
+    "static/css/main.43ba3e56.css",
     "static/js/main.3dd2d409.js"
   ]
 }
