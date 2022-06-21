@@ -1,14 +1,14 @@
 .welcome-kitchen{
     flex-direction: row;
-    margin: 10%;
+    margin: 10vh;
     align-self: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .text-kitchen{
     flex-direction: row;
-    margin-bottom: 10%;
+    margin-bottom: 10vh;
     align-self: center;
     text-align: center;
     font-size: 30px;
@@ -19,5 +19,5 @@
 
 .general-orange-button{
     align-self: center;
-    margin: 3%;
+    margin: 3vh;
 }
