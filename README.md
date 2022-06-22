@@ -46,8 +46,7 @@ o seguinte problema: **como manter a interface e estado sincronizados**.
 
 ## Protótipo do Projeto
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwrNQKPYEAZp0CxiCHYf3hx%2FProt%25C3%25B3tipo-Burger-Tia-N%25C3%25AAna%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D-271%252C431%252C0.51%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" allowfullscreen></iframe>
-
+<!-- <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwrNQKPYEAZp0CxiCHYf3hx%2FProt%25C3%25B3tipo-Burger-Tia-N%25C3%25AAna%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D-271%252C431%252C0.51%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" target="_blank"><img src="./src/images/readmeTablet.jpg"></a> -->
 
 ### Não consegue ver o protótipo? [Clique aqui](https://www.figma.com/proto/wrNQKPYEAZp0CxiCHYf3hx/Prot%C3%B3tipo-Burger-Tia-N%C3%AAna?page-id=0%3A1&node-id=2%3A2&viewport=-271%2C431%2C0.51&scaling=scale-down&starting-point-node-id=2%3A2)
 
