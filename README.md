@@ -46,7 +46,24 @@ o seguinte problema: **como manter a interface e estado sincronizados**.
 
 ## Protótipo do Projeto
 
-<!-- <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwrNQKPYEAZp0CxiCHYf3hx%2FProt%25C3%25B3tipo-Burger-Tia-N%25C3%25AAna%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D-271%252C431%252C0.51%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" target="_blank"><img src="./src/images/readmeTablet.jpg"></a> -->
+<!-- <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwrNQKPYEAZp0CxiCHYf3hx%2FProt%25C3%25B3tipo-Burger-Tia-N%25C3%25AAna%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D-271%252C431%252C0.51%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" target="_blank"><img src="./src/images/protótipo_BurguerQueen.gif"></a>
+   -->
+[<img width="40%" align="left" src="./src/images/protótipo_BurguerQueen.gif">](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwrNQKPYEAZp0CxiCHYf3hx%2FProt%25C3%25B3tipo-Burger-Tia-N%25C3%25AAna%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D-271%252C431%252C0.51%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2) Uma das preocupações no protótipo foi evitar o movimento de rolagem (*scroll*), procurando exibir o maior número de informações de forma coesa e concisa; para isso foram adorados filtros, que visam separar os produtos tanto pelo **menu** ao qual pertencem - Café da Manhã e Almoço - quanto pela **categoria** - Hamburger, Acompanhamento e Bebida.
+
+Um resumo dos itens escolhidos é mostrado abaixo dos pedidos, junto com o botão de "Enviar", que encaminha os pedidos para a cozinha.
+
+Após o pedido ser enviado para a cozinha, tags de diferentes cores ajudam a identificar o status do pedido: 
+
+ * 🟧Laranja: Começar
+ * 🟨Amarelo: Preparando
+ * 🟩Verde: Pronto
+
+Sendo que, apenas os pedidos com status de pronto têm o botão "Enviar" habilitado para que o garçom seja avisado que pode retirar.
+
+Por fim, após a retirada, o garçom pode sinalizar quais pedidos já foram entregues. Se não houver pedidos prontos, o app exibe a mensagem "Aguardando pedidos..."
+
+</br>
+</br>
 
 ### Não consegue ver o protótipo? [Clique aqui](https://www.figma.com/proto/wrNQKPYEAZp0CxiCHYf3hx/Prot%C3%B3tipo-Burger-Tia-N%C3%AAna?page-id=0%3A1&node-id=2%3A2&viewport=-271%2C431%2C0.51&scaling=scale-down&starting-point-node-id=2%3A2)
 
